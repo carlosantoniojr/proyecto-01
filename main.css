@@ -43,6 +43,13 @@
         font-weight:bold;
         text-shadow: 2px 2px 2px #ff006e;
     }
+
+    header nav ul li a:hover {
+        color: #ff006e;
+    }
+    header nav ul li a {
+        transition: color 0.3s linear 0.2s;
+    }
     
     ul li {
         display:inline-block;
