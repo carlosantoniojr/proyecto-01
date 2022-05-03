@@ -1,0 +1,233 @@
+*, *:before, *::after {
+    margin: 0;
+    padding: 0;
+    outline: 10;
+    box-sizing:border-box;
+    }
+    
+    
+    /* GRID */
+    
+    .grid-container{
+            display: grid; 
+            grid-template-columns: 1fr 1fr 1fr; 
+            grid-template-rows: 0.3,4fr 2.2fr 0.3fr; 
+            gap: 0px 0px; 
+            grid-template-areas: 
+              "header header header"
+              "main main main"
+              "site-footer site-footer site-footer"; 
+          }
+         
+    /* HEADER/NAV */
+    
+    Body {
+        background-color:#ffffff;
+        display: flex;
+    }
+    
+    .header {
+        display: flex;
+        /* overflow: hidden; */
+        background-color:#FDD7AA;
+        /* padding:45px 0 20px; */
+        font-size:15px;
+        line-height:24px;
+        color:#737373;
+        grid-area: header;
+    }
+    
+    header nav ul li a {
+        text-decoration: none;
+        color: #1572A1;
+        font-weight:bold;
+        text-shadow: 2px 2px 2px #ff006e;
+    }
+    
+    ul li {
+        display:inline-block;
+        margin: 10px 17px;
+        border: 0px;
+        padding: 10px 40px 10px 40px;
+        position:relative;
+        top: 0px;
+        left: 0px;
+        color:#070101;
+        text-transform: uppercase;
+    }
+    
+    .menuNav {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 400;
+        /* height: 75%;
+        width: 100vw;  */
+        display: flex;
+        align-items: center;
+        /* overflow: hidden; */
+        background-color:#FDD7AA;
+        /* padding:20px 0 20px; */
+        font-size:20px;
+        /* line-height:24px;  */
+    }
+    
+    #empresa {
+        font-size: 35px;
+        color: #023047;
+        font-family: 'Jost', sans-serif;
+        font-weight: 300;
+    }
+    
+    #nombreEmpresa {
+        font-size: 35px;
+        color: #023047;
+        font-family: 'Jost', sans-serif;
+        font-weight: 400;
+        font-style: italic;
+    }
+    
+    .menuNav--li {
+        display: flex;
+        list-style-type: none;  
+    }  
+    
+    #introduccion {
+        text-align: center;
+        font-size: 20px; 
+    }
+    
+    #peticion {
+        text-align: center;
+    }
+    
+    /* TEXTOS Y PARRAFOS */
+    
+    p {
+        color:  #30252a;
+        font-size: 20px;
+        font-family: 'Jost', sans-serif;
+        
+    }
+    h2 {
+        text-align: center;
+        color:  #ff006e;
+        font-size: 40px;
+        font-family: 'Raleway', sans-serif;
+        text-transform: uppercase;
+    }
+    
+    h3 {
+        text-align: center;
+        color:  #ff006e;
+        font-size: 28px;
+        text-transform: uppercase;
+    }
+    h4 {
+        text-transform: uppercase;
+        color:  #db6a28;
+        font-size: 40px;
+        font-family: 'Jost', sans-serif;
+        font-weight: 300;
+    }
+    
+    /* MAIN */
+    
+    .main {
+        margin: 10px;
+        grid-area: main;
+        align-items:center 
+        
+    }
+    
+    /* IMAGENES, VIDEO Y MAPA */
+    
+    main div img {
+        width: 600px;
+        height: 400px;
+    } 
+    
+    #presentacion-video {
+        text-align: center;
+    }
+    
+    #presentacion-mapa {
+        text-align: center;
+    }
+    
+    /* SERVICIOS */
+    
+    .servicio-dos div { 
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+        
+    }
+    .servicio-tres div {
+        display: flex;
+        align-items: center;
+    
+    }
+    .servicio-cuatro div {
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse; 
+    }
+    .servicio-cinco div {
+        display: flex;
+        align-items: center;
+    }
+    .servicio-seis div {
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+    }
+    
+    /* PARRAFOS DE LOS SERVICIOS - DESCRIPCION */
+    
+    div .p-dos {
+        margin: 40px;
+    }
+    
+    div .p-tres {
+        margin: 40px;
+    }
+    div .p-cuatro {
+        margin: 40px;
+    }
+    div .p-cinco {
+        margin: 40px;
+    }
+    div .p-seis {
+        margin: 40px;
+    }
+    
+    
+    /* FOOTER */
+    
+    .footer {
+      background-color:#26272b;
+      padding:45px 0 20px;
+      font-size:15px;
+      line-height:24px;
+      color:#737373;
+      text-align:center;
+      grid-area: site-footer;
+      }
+    
+     /* MEDIA - QUERIES*/
+     /* mobile */
+    
+     @media only screen and (max-width:450px) {
+        
+    }
+    
+    /* tablet */
+    
+    @media only screen and (min-width:451px) and (max-width:960px) {
+        
+    }
+    
+    /* desktop */
+    
+    @media only screen and (min-width:961px) {
+        
+    }
