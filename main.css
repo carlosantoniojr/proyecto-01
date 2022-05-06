@@ -1,7 +1,7 @@
 *, *:before, *::after {
     margin: 0;
     padding: 0;
-    outline: 10;
+    outline: 0;
     box-sizing:border-box;
     }
     
@@ -28,7 +28,7 @@
     
     .header {
         display: flex;
-        /* overflow: hidden; */
+        overflow: hidden;
         background-color:#FDD7AA;
         /* padding:45px 0 20px; */
         font-size:15px;
@@ -52,10 +52,10 @@
     }
     
     ul li {
-        display:inline-block;
+        display: flex;
         margin: 10px 17px;
         border: 0px;
-        padding: 10px 40px 10px 40px;
+        /* padding: 10px 40px 10px 40px; */
         position:relative;
         top: 0px;
         left: 0px;
@@ -70,7 +70,7 @@
         width: 100vw;  */
         display: flex;
         align-items: center;
-        /* overflow: hidden; */
+        overflow: hidden;
         background-color:#FDD7AA;
         /* padding:20px 0 20px; */
         font-size:20px;
@@ -148,15 +148,19 @@
     /* IMAGENES, VIDEO Y MAPA */
     
     main div img {
+        display: flex;
         width: 600px;
         height: 400px;
+        max-width: 100%;
     } 
     
     #presentacion-video {
+        display: flex;
         text-align: center;
     }
     
     #presentacion-mapa {
+        display: flex;
         text-align: center;
     }
     
@@ -166,12 +170,10 @@
         display: flex;
         align-items: center;
         flex-direction: row-reverse;
-        
     }
     .servicio-tres div {
         display: flex;
         align-items: center;
-    
     }
     .servicio-cuatro div {
         display: flex;
@@ -192,19 +194,24 @@
     
     div .p-dos {
         margin: 40px;
+        display: flex;
     }
     
     div .p-tres {
         margin: 40px;
+        display: flex;
     }
     div .p-cuatro {
         margin: 40px;
+        display: flex;
     }
     div .p-cinco {
         margin: 40px;
+        display: flex;
     }
     div .p-seis {
         margin: 40px;
+        display: flex;
     }
     
     
@@ -220,13 +227,15 @@
       grid-area: site-footer;
       }
     
-     /* MEDIA - QUERIES*/
+       /* MEDIA - QUERIES*/
      /* mobile */
     
-     @media only screen and (max-width:450px) {
+     @media only screen and (max-width:450px){
+         aside, article{
+             grid-column: 1;
+         }
+     } 
         
-    }
-    
     /* tablet */
     
     @media only screen and (min-width:451px) and (max-width:960px) {
